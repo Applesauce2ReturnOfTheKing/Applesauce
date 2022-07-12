@@ -37,12 +37,7 @@ monarchy = {
 				confucian_bureaucracy
 				musa_rule
 				mossi_federal_kingdom
-				h_reform_warlord_1
-				h_reform_prefecture
 				h_reform_citystate
-				h_reform_warlord_2
-				h_reform_warlord_3
-				h_reform_warlord_4
 				h_reform_sinicized_horde
 			}
 		}
@@ -822,27 +817,7 @@ pre_dharma_mapping = {
 		government = republic
 		legacy_government = oligarchic_republic
 	}
-	h_reform_prefecture = {
-		government = monarchy
-		legacy_government = despotic_monarchy
-	}
-	h_reform_warlord_1 = {
-		government = monarchy
-		legacy_government = despotic_monarchy
-	}
 	h_reform_citystate = {
-		government = monarchy
-		legacy_government = despotic_monarchy
-	}
-	h_reform_warlord_2 = {
-		government = monarchy
-		legacy_government = despotic_monarchy
-	}
-	h_reform_warlord_3 = {
-		government = monarchy
-		legacy_government = despotic_monarchy
-	}
-	h_reform_warlord_4 = {
 		government = monarchy
 		legacy_government = despotic_monarchy
 	}

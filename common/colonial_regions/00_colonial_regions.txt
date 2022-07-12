@@ -1,74 +1,74 @@
 # Alaska
-#colonial_alaska = {
-#	color = { 225 225 225 }
-#
-#	# Random New World
-#	tax_income = 0
-#	native_size = 8
-#	native_ferocity = 1
-#	native_hostileness = 4
-#	
-#	trade_goods = {
-#		fur = 10
-#		fish = 3
-#		naval_supplies = 2
-#		gold = 2
-#	}
-#	
-#	culture = {
-#		inuit = 10
-#		aleutian = 8
-#	}
-#	
-#	religion = {
-#		shamanism = 10
-#	}
-#
-#	provinces = {
-#		979 978 977 976 975 974 972 2022 2609 2610 2611 2612 2613
-#		2481 2482 2483 872 2019 2020 2489 2490 2486 2487 2488 873 2484 2485 874 2604 2605 2606 2607
-#		2003 973 2004 2602 2017 2018 2599 2600 2601 2603
-#	}
-#	
-#	# Specific
-#	names = {
-#		trigger = {
-#			primary_culture = russian
-#		}
-#		name = "COLONIAL_ALASKA_Alyeska"
-#	}
-#	names = {
-#		trigger = {
-#			OR = {
-#				tag = SPA
-#				tag = CAS
-#				tag = ARA
-#			}
-#		}
-#		name = "COLONIAL_ALASKA_Pacifico_Norte"
-#	}
-#	# Generic
-#	names = {
-#		trigger = {
-#			any_owned_province = {
-#				OR = {
-#					area = alaska_area
-#					area = east_alaska_area
-#				}
-#			}
-#		}
-#		name = "COLONIAL_ALASKA_Alaska"
-#	}
-#	names = {
-#		name = "COLONIAL_CALIFORNIA_Cascadia"
-#	}
-#	names = {
-#		name = "COLONIAL_REGION_New_Root_GetName"
-#	}
-#	names = {
-#		name = "COLONIAL_ALASKA_Aleutia"
-#	}
-#}
+colonial_alaska = {
+	color = { 225 225 225 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 8
+	native_ferocity = 1
+	native_hostileness = 4
+	
+	trade_goods = {
+		fur = 10
+		fish = 3
+		naval_supplies = 2
+		gold = 2
+	}
+	
+	culture = {
+		inuit = 10
+		aleutian = 8
+	}
+	
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		979 978 977 976 975 974 972 2022 2609 2610 2611 2612 2613
+		2481 2482 2483 872 2019 2020 2489 2490 2486 2487 2488 873 2484 2485 874 2604 2605 2606 2607
+    	2003 973 2004 2602 2017 2018 2599 2600 2601 2603
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			primary_culture = russian
+		}
+		name = "COLONIAL_ALASKA_Alyeska"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				tag = ARA
+			}
+		}
+		name = "COLONIAL_ALASKA_Pacifico_Norte"
+	}
+	# Generic
+	names = {
+		trigger = {
+			any_owned_province = {
+				OR = {
+					area = alaska_area
+					area = east_alaska_area
+				}
+			}
+		}
+	name = "COLONIAL_ALASKA_Alaska"
+	}
+	names = {
+		name = "COLONIAL_CALIFORNIA_Cascadia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		name = "COLONIAL_ALASKA_Aleutia"
+	}
+}
 
 # Canada
 colonial_canada = {
@@ -144,7 +144,7 @@ colonial_canada = {
 				alliance_with = SCO
 			}
 		}
-		name = "COLONIAL_CANADA_Nouvelle_Écosse"
+		name = "COLONIAL_CANADA_Nouvelle_ï¿½cosse"
 	}
 	names = {
 		trigger = {
@@ -1095,7 +1095,7 @@ colonial_la_plata = {
 		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_Paraguay"
 	}
 	names = {
-		trigger = { # Amélioration la Pléiade
+		trigger = { # Amï¿½lioration la Plï¿½iade
 			any_owned_province = { 
 				OR = {
 					area = southern_chile_area
