@@ -24,9 +24,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4110;369;sea;1282;2757;1705;2757;1710;Sutherland-Orkney
 97;100;sea;1269;2890;1581;2886;1576;Holland-Friesland
 96;1865;sea;1269;-1;-1;-1;-1;Zeeland-Gent
-1017;1818;sea;1390;4853;1213;4848;1208;Suo-Chikuzen
-1818;4186;sea;1390;4860;1202;4872;1202;Chikuzen-Iyo #PR/MJL Change
-4186;1825;sea;1390;4881;1219;4880;1214;Aki-Iyo
 36;35;sea;1926;3171;1709;3165;1709;Estland-Ösel
 35;39;sea;1256;3157;1684;3158;1694;Ösel-Kurland
 597;620;sea;1361;4403;657;4415;672;Johor-Siak
@@ -35,16 +32,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 972;973;sea;1558;-1;-1;-1;-1;Nootka-Squamish
 972;974;sea;1558;-1;-1;-1;-1;Nootka-Kwakiutl
 2569;982;sea;1491;1847;1650;1849;1652;Acadia-Unamakik
-984;983;sea;1491;1824;1654;1825;1658;Acadia-Epekwitk
+4891;983;sea;1491;1824;1654;1825;1658;Piktuk-Epagoitgnag
 997;981;sea;1493;1935;1781;1939;1773;Chisedek-Taqamkuk
 1050;4658;sea;1379;5014;1562;5017;1564;Deren-Nanghaer
 1215;387;sea;1330;3482;849;3484;853;Tajura-Mocha
 112;1774;sea;1308;2995;1432;2994;1434;Venice-Treviso
 54;4141;sea;1268;2945;1599;2943;1597;Stade-Dithmarschen
 1820;1021;sea;1391;4912;1219;4919;1223;Awa-Settsu
-5668;4193;sea;1387;4999;1357;5005;1351;Oshima-Mutsu -> Oshima ->Aomori
+4131;4193;sea;1387;4999;1357;5005;1351;Oshima-Mutsu
 1032;1852;sea;4225;5099;1408;5073;1386;Kurils-Tokachi
-1199;1201;sea;1448;-1;-1;-1;-1;Bagamoyo-Zanzibar
 1247;127;sea;1298;-1;-1;-1;-1;Corsica-Sardinia
 394;396;sea;4347;3589;1076;3592;1074;Al Hasa-Bahrain
 395;396;sea;4347;3596;1071;3601;1071;Qatar-Bahrain
@@ -71,24 +67,21 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 498;497;sea;1523;-1;-1;-1;-1;Martinique-Dominica
 496;495;sea;1523;-1;-1;-1;-1;Guadalupe-Antigua
 495;494;sea;1523;-1;-1;-1;-1;Antigua-St Kits
-628;2692;sea;1355;-1;-1;-1;-1;Surabaya-Madura
-631;2693;sea;1355;-1;-1;-1;-1;Bali-Lombok
 2693;632;sea;1355;-1;-1;-1;-1;Lombok-Sumbawa
 632;633;sea;1355;4666;511;4675;512;Sumbawa-Flores
 633;2695;sea;1401;4749;514;4758;512;Flores-East Timor
-2716;642;sea;1357;4714;569;4712;575;Buton-Kendari
+2716;4796;sea;1357;4714;569;4712;575;Buton-Kendari
 2700;4351;sea;1397;-1;-1;-1;-1;Cebu-Panay
 4353;4355;sea;1402;4765;804;4761;811;Leyte-Caraga
 2700;4350;sea;1397;4708;838;4702;846;Panay-Mindoro
 4356;4350;sea;1395;-1;-1;-1;-1;Taytay-Mindoro
 646;647;sea;1401;-1;-1;-1;-1;Ambom-Ceram
 2678;622;sea;1361;4446;618;4443;617;Banka-Palembang
-2686;597;sea;1361;4434;664;4430;666;Bintan-Johor
+2686;4815;sea;1361;4434;664;4430;666;Bintan-Johor
 2929;2890;sea;1529;2021;838;2022;841;Para-Marajo
 748;2890;sea;1529;2050;847;2046;850;Belem-Marajo
 911;2587;sea;1661;-1;-1;-1;-1;Belem-Marajo
 2954;353;sea;1305;2973;1210;2972;1208;Djerba-Tataouine
-624;623;sea;1352;-1;-1;-1;-1;Banten-Tulungbewang
 431;2999;sea;1334;3693;1091;3689;1089;Mogostan-Hormuz
 398;2999;sea;1334;3686;1080;3684;1084;Qawasim-Hormuz
 146;3003;sea;1319;3174;1294;3175;1294;Athens - Euboea
@@ -100,8 +93,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4699;4698;sea;1312;-1;-1;-1;-1;Arta-Cephalonia
 4745;47;sea;1257;3013;1607;3012;1606;Rügen-Stralsund
 2994;48;sea;1257;-1;-1;-1;-1;Wolgast-Kolberg
-5528;666;sea;1257;-1;-1;-1;-1;Zhanhjing-Kiungchow
-87;235;sea;1271;-1;-1;-1;-1;Kent-Calais PR Change
-2745;4651;sea;1376;-1;-1;-1;-1;Gyeongju-Tsushima PR/MJL change
-4651;1818;sea;1376;-1;-1;-1;-1;Tsushima-Chikuzen PR/MJL change
+1087;4869;sea;1414;-1;-1;-1;-1;Wurundjeri-Peerapper
+631;627;sea;1354;-1;-1;-1;-1;Bali-Blambangan
 -1;-1;;-1;-1;-1;-1;-1;-1;
