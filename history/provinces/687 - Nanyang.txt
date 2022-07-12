@@ -16,7 +16,7 @@ fort_15th = yes
 
 discovered_by = chinese
 discovered_by = nomad_group
-discovered_by = indian
+
 
 1450.1.1 = { citysize = 31500 }
 1500.1.1 = { citysize = 33157 }

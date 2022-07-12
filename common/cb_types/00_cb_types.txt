@@ -412,7 +412,6 @@ cb_independence_war = {
 					}
 				}
 			}
-			NOT = { from = { has_reform = shogunate } }
 		}
 	}
 
@@ -490,167 +489,6 @@ cb_war_against_the_world = {
 	war_goal = take_capital_pirates
 }
 
-# Daimyo on Japan
-cb_daimyo_annex = {
-	valid_for_subject = no
-	exclusive = yes
-	independence = yes
-
-	prerequisites = {
-		is_subject = yes
-		OR = {
-			vassal_of = FROM
-			junior_union_with = FROM
-		}
-		OR = {
-			has_reform = daimyo
-			AND = {
-				tag = SOO
-				OR = {
-					has_reform = pirate_republic_reform
-					has_reform = pirate_king_reform
-					has_reform = war_against_the_world_doctrine_reform
-					has_reform = black_market_consortium_reform
-				}
-			}
-			AND = {
-				has_country_flag = ikko_ikki_peasants_flag
-				OR = {
-					has_reform = leading_clergy_reform
-					has_reform = monastic_order_reform
-					has_reform = peasants_republic
-				}
-			}
-		}
-		from = { has_reform = shogunate }
-		is_revolutionary = no
-	}
-
-	war_goal = annex_country_japan
-}
-
-cb_independent_daimyo_annex = {
-	valid_for_subject = no
-	exclusive = yes
-
-	prerequisites = {
-		is_subject = no
-		NOT = {
-			vassal_of = FROM
-			junior_union_with = FROM
-		}
-		OR = {
-			has_reform = indep_daimyo
-			AND = {
-				tag = SOO
-				OR = {
-					has_reform = pirate_republic_reform
-					has_reform = pirate_king_reform
-					has_reform = war_against_the_world_doctrine_reform
-					has_reform = black_market_consortium_reform
-				}
-			}
-		}
-		from = { has_reform = shogunate }
-		is_revolutionary = no
-	}
-
-	war_goal = annex_country_japan
-}
-
-cb_shogun_annex = {
-	valid_for_subject = no
-
-	prerequisites = {
-		has_reform = shogunate
-		from = {
-			OR = {
-				has_reform = daimyo
-				AND = {
-					tag = SOO
-					OR = {
-						has_reform = pirate_republic_reform
-						has_reform = pirate_king_reform
-						has_reform = war_against_the_world_doctrine_reform
-						has_reform = black_market_consortium_reform
-					}
-					AND = {
-						has_country_flag = ikko_ikki_peasants_flag
-						OR = {
-							has_reform = leading_clergy_reform
-							has_reform = monastic_order_reform
-							has_reform = peasants_republic
-						}
-					}
-				}
-			}
-			OR = {
-				num_of_cities = 10
-				is_subject = no
-			}
-		}
-		is_revolutionary = no
-	}
-
-	war_goal = annex_country_japan
-}
-
-# Sengoku - Daimyo infighting
-cb_sengoku = {
-	valid_for_subject = no
-
-	prerequisites = {
-		OR = {
-			has_reform = daimyo
-			AND = {
-				tag = SOO
-				OR = {
-					has_reform = pirate_republic_reform
-					has_reform = pirate_king_reform
-					has_reform = war_against_the_world_doctrine_reform
-					has_reform = black_market_consortium_reform
-				}
-				AND = {
-					has_country_flag = ikko_ikki_peasants_flag
-					OR = {
-						has_reform = leading_clergy_reform
-						has_reform = monastic_order_reform
-						has_reform = peasants_republic
-					}
-				}
-			}
-		}
-		is_neighbor_of = FROM
-		is_subject = yes
-		from = {
-			OR = {
-				has_reform = daimyo
-				AND = {
-					tag = SOO
-					OR = {
-						has_reform = pirate_republic_reform
-						has_reform = pirate_king_reform
-						has_reform = war_against_the_world_doctrine_reform
-						has_reform = black_market_consortium_reform
-					}
-				}
-				AND = {
-					has_country_flag = ikko_ikki_peasants_flag
-					OR = {
-						has_reform = leading_clergy_reform
-						has_reform = monastic_order_reform
-						has_reform = peasants_republic
-					}
-				}
-			}
-			is_subject = yes
-		}
-		is_revolutionary = no
-	}
-
-	war_goal = annex_country_japan
-}
-
 # Revolutionary CB
 cb_revolutionary = {
 	valid_for_subject = no
@@ -665,8 +503,6 @@ cb_revolutionary = {
 			has_reform = celestial_empire
 			has_reform = iqta
 			has_reform = mamluk_government
-			has_reform = daimyo
-			has_reform = shogunate
 			has_reform = colonial_government
 			government = native
 		}
@@ -678,8 +514,6 @@ cb_revolutionary = {
 				has_reform = celestial_empire
 				has_reform = iqta
 				has_reform = mamluk_government
-				has_reform = daimyo
-				has_reform = shogunate
 				has_reform = colonial_government
 				government = native
 			}
@@ -1230,85 +1064,6 @@ cb_humiliate_rotw = {
 	war_goal = humiliate_rotw
 }
 
-# Reunification of China
-cb_chinese_unification = {
-	valid_for_subject = no
-
-	prerequisites = {
-		is_free_or_tributary_trigger = yes
-		OR = {
-			AND = {
-				has_dlc = "Mandate of Heaven"
-				is_emperor_of_china = yes
-			}
-			AND = {
-				NOT = { has_dlc = "Mandate of Heaven" }
-				culture_group = east_asian #Chinese
-				OR = {	#Manchus won't get this unless they unify
-					tag = MCH
-					tag = QNG
-					NOT = { primary_culture = manchu }
-				}
-			}
-			has_government_attribute = has_unify_china_cb
-		}
-		
-		FROM = { #Applies against other powers in China unless they have the Mandate of Heaven
-			NOT = { is_subject_of = ROOT }
-			OR = {
-				has_dlc = "Mandate of Heaven"
-				culture_group = east_asian #Chinese
-			}
-			any_owned_province = {
-				OR = {
-					region = north_china_region
-					region = xinan_region
-					region = south_china_region
-				}
-			}
-			NOT = { has_country_modifier = the_mandate_of_heaven }
-			is_emperor_of_china = no
-		}
-		is_neighbor_of = FROM
-	}
-	
-	attacker_disabled_po = {
-		po_become_tributary_state
-		po_subjugate_tributary_state
-	}
-
-	war_goal = superiority_chinese_unification
-}
-
-# Take the Mandate of Heaven
-cb_take_mandate = {
-	valid_for_subject = no
-
-	prerequisites = {
-		has_dlc = "Mandate of Heaven"
-		is_subject = no
-		is_neighbor_of = FROM
-		NOT = { has_reform = shogunate }
-		FROM = { is_emperor_of_china = yes }
-		OR = {
-			religion_group = pagan
-			religion_group = eastern
-		}
-		NOT = { truce_with = FROM }
-		is_revolutionary = no
-		
-		OR = {
-			ai = no
-			culture_group = east_asian
-			any_owned_province = {
-				culture_group = east_asian
-				has_owner_accepted_culture = yes
-			}
-		}
-	}
-	
-	war_goal = take_capital_take_mandate
-}
 
 # Forced our ally to break alliance
 cb_forced_break_alliance = {
@@ -1318,40 +1073,6 @@ cb_forced_break_alliance = {
 	months = 120
 	
 	war_goal = superiority_insult
-}
-
-cb_force_tributary = {
-
-	valid_for_subject = no
-
-	prerequisites = {
-		has_dlc = "Mandate of Heaven"
-		is_emperor_of_china = yes
-		FROM = { is_subject = no }
-		is_neighbor_of = FROM
-		FROM = {
-			ai = yes
-		}
-		AND = {
-			OR = {
-				NOT = { ROOT = { capital_scope = { superregion = china_superregion } } }
-				AND = {
-					ROOT = { capital_scope = { superregion = china_superregion } }
-					NOT = { FROM = { any_owned_province = { superregion = china_superregion } } }
-				}
-			}
-			OR = {
-				NOT = { ROOT = { capital_scope = { region = japan_region } } }
-				AND = {
-					ROOT = { capital_scope = { region = japan_region } }
-					NOT = { FROM = { any_owned_province = { region = japan_region } } }
-				}
-			}
-		}
-
-	}
-	
-	war_goal = take_capital_force_tributary
 }
 
 cb_force_tributary_mission = {
@@ -1458,77 +1179,6 @@ cb_world_crusade = {
 	war_goal = superiority_world_crusade
 }
 
-# CB for Majapahit
-cb_vassalize_majapahit = {
-	valid_for_subject = no
-
-	prerequisites = {
-		mission_completed = mnd_maj_enforce_loyalty
-		FROM = {
-			is_free_or_tributary_trigger = yes
-			OR = {
-				culture_group = malay
-				AND = {
-					technology_group = chinese
-					ROOT = { mission_completed = mnd_maj_gaja_madas_oath }
-				}
-				ROOT = { mission_completed = mnd_maj_subjugate_the_mainland }
-			}
-		}
-	}
-
-	war_goal = take_capital_vassalize_maj
-}
-
-# For Malacca
-cb_vassalize_malacca = {
-	valid_for_subject = no
-
-	prerequisites = {
-		mission_completed = mnd_mlc_destroy_majapahit
-		FROM = {
-			is_free_or_tributary_trigger = yes
-			culture_group = malay
-		}
-	}
-
-	war_goal = take_capital_vassalize_maj
-}
-
-cb_sword_of_islam = {
-	valid_for_subject = no
-
-	prerequisites = {
-		mission_completed = atj_porch_of_mecca
-		religion = sunni
-		FROM = {
-			NOT = { religion_group = muslim }
-			OR = {
-				primary_culture = sumatran
-				AND = {
-					ROOT = { mission_completed = atj_sumatra_islam }
-					OR = {
-						primary_culture = javanese
-						primary_culture = sundanese
-					}
-				}
-				AND = {
-					ROOT = { mission_completed = atj_java_islam }
-					OR = {
-						primary_culture = sulawesi
-						primary_culture = moluccan
-					}
-				}
-				AND = {
-					ROOT = { mission_completed = atj_moluccas_islam }
-					is_neighbor_of = ROOT
-				}
-			}
-		}
-	}
-
-	war_goal = superiority_world_crusade
-}
 
 # Force migration
 cb_force_migration = {

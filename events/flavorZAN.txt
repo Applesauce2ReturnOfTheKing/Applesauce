@@ -43,9 +43,6 @@ country_event = {
 					tag = MBA
 					tag = SFA
 				}
-				NOT = { capital_scope = { region = malaya_region } }
-				NOT = { capital_scope = { region = moluccas_region } }
-				NOT = { capital_scope = { region = indonesia_region } }
 			}
 			add_opinion = { who = ZAN modifier = zan_shirazi_islam }
 		}
@@ -69,9 +66,6 @@ country_event = {
 					tag = MBA
 					tag = SFA
 				}
-				NOT = { capital_scope = { region = malaya_region } }
-				NOT = { capital_scope = { region = moluccas_region } }
-				NOT = { capital_scope = { region = indonesia_region } }
 			}
 			add_opinion = { who = ZAN modifier = zan_religious_orthodoxy }
 		}
@@ -205,9 +199,6 @@ country_event = {
 					tag = MBA
 					tag = SFA
 				}
-				NOT = { capital_scope = { region = malaya_region } }
-				NOT = { capital_scope = { region = moluccas_region } }
-				NOT = { capital_scope = { region = indonesia_region } }
 			}
 			add_opinion = { who = ZAN modifier = zan_religious_orthodoxy }
 		}

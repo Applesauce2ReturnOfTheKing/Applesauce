@@ -1,0 +1,6 @@
+#4937 - Lau
+
+discovered_by = polynesian_tech
+
+
+1643.1.1 = { discovered_by = NED } # Abel Tasman

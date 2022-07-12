@@ -655,212 +655,6 @@ merc_bandeirantes = {
 	}
 }
 
-# Huai Army (China, Anhui, Huai River)
-merc_huai_army = {
-    regiments_per_development = 0.05
-	cavalry_weight = 0.1
-	artillery_weight = 0.0
-	cavalry_cap = 2
-    home_province = 688
-	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
-    trigger = {
-		OR = {
-			capital_scope = {
-				OR = {
-					superregion = china_superregion 
-					superregion = tartary_superregion
-				}
-			}
-			any_owned_province = {
-				superregion = china_superregion 
-			}
-			has_country_modifier = mercenaries_to_the_standard
-			has_country_modifier = glut_of_mercs
-		}
-	}
-	modifier = { }
-}
-
-# Xiang Army (China, Hunan, Xiang River)
-merc_xiang_army = {
-    regiments_per_development = 0.05
-	cavalry_weight = 0.1
-	artillery_weight = 0.0
-	cavalry_cap = 2
-    home_province = 2174
-	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
-    trigger = {
-		OR = {
-			capital_scope = {
-				OR = {
-					superregion = china_superregion 
-					superregion = tartary_superregion
-				}
-			}
-			any_owned_province = {
-				superregion = china_superregion 
-			}
-			has_country_modifier = mercenaries_to_the_standard
-			has_country_modifier = glut_of_mercs
-		}
-	}
-	modifier = { }
-}
-
-# Lang Bing/Wolf Troops (Guangxi)
-merc_wolf_troops = {
-    regiments_per_development = 0.025
-	cavalry_weight = 0.1
-	artillery_weight = 0.0
-	cavalry_cap = 2
-	cost_modifier = 1.2
-    home_province = 2164
-	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
-    trigger = {
-		any_owned_province = {
-			OR = {
-				superregion = china_superregion
-				region = indo_china_region
-				region = manchuria_region
-				region = korea_region
-			}
-		}
-	}
-	modifier = {
-        shock_damage = 0.1
-	}
-}
-
-# Mercenaries from Shanxi
-merc_shanxi_guard = {
-    regiments_per_development = 0.05
-	cavalry_weight = 0.1
-	artillery_weight = 0.0
-	cavalry_cap = 2
-    home_province = 2177
-	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
-    trigger = { 
-		capital_scope = {
-			OR = {
-				superregion = china_superregion 
-				superregion = tartary_superregion
-				region = korea_region
-			}
-		}
-	}
-	modifier = { }
-}
-
-# Mercenaries from Yongning, where the She-An Rebellion started
-merc_yongning_warriors = {
-    regiments_per_development = 0.05
-	cavalry_weight = 0.1
-	artillery_weight = 0.0
-	cavalry_cap = 2
-    home_province = 4213
-	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
-    trigger = { 
-		capital_scope = {
-			OR = {
-				superregion = china_superregion 
-				superregion = tartary_superregion
-			}
-		}
-	}
-	modifier = { }
-}
-
-# Kanto Ronin
-merc_kanto_ronin = {
-    regiments_per_development = 0.025
-    home_province = 1028
-	sprites = { dlc068_jap_sprite_pack jap_base_sprite_pack }
-    trigger = {
-		capital_scope = { region = japan_region }
-	}
-	modifier = { }
-}
-
-# Kyushu Wokou
-merc_kyushu_wokou = {
-    regiments_per_development = 0.025
-    home_province = 1818
-	sprites = { dlc067_smz_sprite_pack jap_base_sprite_pack }
-    trigger = {
-		any_owned_province = {
-			OR = {
-				region = japan_region
-				region = manchuria_region
-				region = korea_region
-			}
-		}
-	}
-	modifier = { }
-}
-
-# Shikoku Yojimbo
-merc_shikoku_yojimbo = {
-    regiments_per_development = 0.025
-    home_province = 1819
-	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
-    trigger = {	
-		capital_scope = { region = japan_region }
-	}
-	modifier = { }
-}
-
-merc_purbiyas = {
-    regiments_per_development = 0.04
-	artillery_weight = 0.0
-    home_province = 555
-	sprites = { dlc092_jnp_sprite_pack dlh_base_sprite_pack }
-    trigger = {
-		capital_scope = { superregion = india_superregion }
-	}
-	modifier = { }
-}
-
-# Gurkhas
-merc_gorkhalis = {
-    regiments_per_development = 0.025
-	artillery_weight = 0.0
-    home_province = 4485
-    cost_modifier = 1.5
-	sprites = { dlc091_npl_sprite_pack indiangfx_sprite_pack }
-    trigger = {
-		OR = {
-			any_owned_province = {
-				superregion = india_superregion
-			}
-			has_country_modifier = mercenaries_to_the_standard
-			has_country_modifier = glut_of_mercs
-		}
-	}
-	modifier = {
-        infantry_power = 0.05
-        shock_damage = 0.05
-	}
-}
-
-# Gosains
-merc_gosains = {
-    regiments_per_development = 0.03
-	cavalry_weight = 0.1
-	artillery_weight = 0.0
-	cavalry_cap = 2
-	cost_modifier = 1.2
-    home_province = 523
-	sprites = { dlc092_jnp_sprite_pack indiangfx_sprite_pack }
-    trigger = {
-		religion = hinduism
-		any_owned_province = {
-			superregion = india_superregion
-		}
-	}
-	modifier = {
-        land_morale = 0.05
-	}
-}
 
 # Tamil Company
 merc_tamil_company = {
@@ -877,36 +671,6 @@ merc_tamil_company = {
 				region = coromandel_region
 			}
 		}
-	}
-	modifier = { }
-}
-
-merc_company_of_the_ganges = {
-    regiments_per_development = 0.03
-    home_province = 4497 # Kannauj
-	sprites = { dlc092_jnp_sprite_pack dlh_base_sprite_pack }
-    trigger = {
-		any_owned_province = {
-			OR = {
-				region = bengal_region
-				region = hindusthan_region
-				region = west_india_region
-			}
-		}
-	}
-	modifier = { }
-}
-
-# Banjaras
-merc_banjara_company = {
-    regiments_per_development = 0.05
-    cavalry_weight = 0.4
-    artillery_weight = 0.0
-	cavalry_cap = 6
-	home_province = 514
-	sprites = { dlc091_mer_sprite_pack indiangfx_sprite_pack }
-    trigger = {
-		capital_scope = { superregion = india_superregion }
 	}
 	modifier = { }
 }
@@ -985,22 +749,6 @@ merc_nile_mamluks = {
         cavalry_power = 0.1
         discipline = 0.025
     }
-}
-
-merc_delhi_mamluks = {
-    regiments_per_development = 0.05
-    cavalry_weight = 0.4
-    artillery_weight = 0.0
-	cavalry_cap = 6
-    home_province = 522
-	sprites = { dlh_base_sprite_pack }
-	trigger = { 
-		religion_group = muslim
-		capital_scope = {
-			superregion = india_superregion
-		}
-	}
-    modifier = { }
 }
 
 merc_zeybeks = {
@@ -1150,33 +898,6 @@ merc_nubian_company = {
     modifier = { }
 }
 
-merc_tonkinese_army = {
-    regiments_per_development = 0.05
-    artillery_weight = 0.0
-    home_province = 2372
-	sprites = { dlc041_dai_sprite_pack dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
-	cost_modifier = 1.1
-	trigger = {
-		OR = {
-			capital_scope = {
-				OR = {
-					superregion = china_superregion
-					superregion = east_indies_superregion
-				}
-			}
-			any_owned_province = {
-				region = indo_china_region
-			}
-			has_country_modifier = mercenaries_to_the_standard
-			has_country_modifier = glut_of_mercs
-		}
-	}
-    modifier = {
-		land_attrition = -0.2
-		reinforce_speed = 0.2
-	}
-}
-
 merc_mongol_mercenaries = {
     regiments_per_development = 0.05
     cavalry_weight = 0.4
@@ -1194,7 +915,6 @@ merc_mongol_mercenaries = {
 			any_owned_province = {
 				OR = {
 					culture_group = altaic
-					region = north_china_region
 					region = mongolia_region
 					region = manchuria_region
 					region = central_asia_region
@@ -1344,9 +1064,7 @@ merc_buryat_band = {
 			OR = {
 				region = east_siberia_region
 				region = mongolia_region
-				region = north_china_region
 				region = manchuria_region
-				region = korea_region
 			}
 		}
 	}
@@ -1440,25 +1158,6 @@ merc_moorish_battalion = {
 	trigger = { 
 		OR = {
 			capital_scope = { region = maghreb_region }
-			has_country_modifier = mercenaries_to_the_standard
-			has_country_modifier = glut_of_mercs
-		}
-	}
-    modifier = { }
-}
-
-merc_kutai_company = {
-    regiments_per_development = 0.03
-	home_province = 638 # Kutai
-	sprites = { asiangfx_sprite_pack }
-	trigger = {
-		OR = {
-			capital_scope = {
-				superregion = east_indies_superregion
-			}
-			any_owned_province = {
-				region = indonesia_region
-			}
 			has_country_modifier = mercenaries_to_the_standard
 			has_country_modifier = glut_of_mercs
 		}
@@ -1666,17 +1365,6 @@ merc_great_lakes_free_warriors = {
     modifier = { }
 }
 
-merc_thai_company = {
-    regiments_per_development = 0.03
-    home_province = 600
-	sprites = { ayu_base_sprite_pack }
-	trigger = {
-		any_owned_province = {
-			region = indo_china_region
-		}
-	}
-    modifier = { }
-}
 
 merc_yucatan_company = {
     regiments_per_development = 0.04

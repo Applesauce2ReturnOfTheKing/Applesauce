@@ -1,7 +1,0 @@
-#4936 - Kauai
-
-discovered_by = polynesian_tech
-
-
-1555.1.1 = { discovered_by = SPA }
-1778.1.1 = { discovered_by = GBR }
