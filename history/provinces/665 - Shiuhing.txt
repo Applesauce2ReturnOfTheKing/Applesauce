@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 7
 base_manpower = 2
 hre = no
-citysize = 15348
+citysize = 1
 
 discovered_by = chinese
 

@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 hre = no
-citysize = 51000
+citysize = 5
 
 fort_15th = yes
 discovered_by = chinese
